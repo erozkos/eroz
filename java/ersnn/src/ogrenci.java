@@ -1,5 +1,5 @@
 
-public class Ogrenci extends Kisi {
+public class ogrenci extends Kisiler{
 	int OgrenciNo;
 	String Bolum;
 	String Sinifi;
@@ -9,11 +9,11 @@ public class Ogrenci extends Kisi {
 		this.Bolum = Bolum;
 		this.Sinifi = Sinifi;		
 	}
-	public static void derse_gir(String string){
+	public static void derse_girer(String string){
 		System.out.println("Ögrenci derse girer..");
 	}
-	public static void kantine_gider(String string){
+	public static void kantine_git(String string){
 		System.out.println("Ögrenci kantine gider..");
-	}
 
+	}
 }

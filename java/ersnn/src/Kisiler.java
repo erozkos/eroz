@@ -1,6 +1,5 @@
 
-
-public class Kisi {
+public class Kisiler {
 	String Tc, Ad, Soyad, D_Tarihi;
 	public void Kisi_Tanýmla(String Tc, String Ad, String Soyad, String D_Tarihi) {
 		this.Tc = Tc;
