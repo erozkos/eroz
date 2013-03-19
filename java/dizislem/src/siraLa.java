@@ -10,14 +10,14 @@ public class siraLa {
 	   String a ;
 		sayiLar = new int [10];
 		for(int i = 0; i < 10; i++){
-				 a = (JOptionPane.showInputDialog(null, (i+1) + ". sayýyý giriniz :"));
+				 a = (JOptionPane.showInputDialog(null, (i+1) + ". sayiyi giriniz :"));
 				 sayiLar[i] = Integer.parseInt(a) ;
 				 
 		 }
 		
 		diziGoruntule(sayiLar,"ilk dizi");
-		diziGoruntule(kucuk(sayiLar),"küçüken büyüge");
-		diziGoruntule(buyuk(sayiLar),"büyükten küçüge");
+		diziGoruntule(kucuk(sayiLar),"kucukten buyuge");
+		diziGoruntule(buyuk(sayiLar),"buyukten kucuge");
 		diziGoruntuleort(ort(sayiLar));
 	
 		
@@ -33,16 +33,16 @@ public class siraLa {
 	public static int[] buyuk(int [] dizi1) {
 
 		
-		int [] sýrali_dizi ;
-		sýrali_dizi = new int [10];
+		int [] sirali_dizi ;
+		sirali_dizi = new int [10];
 				
 		Arrays.sort(dizi1);
 		for (int j = 0; j < 10 ; j++ ){
-			sýrali_dizi[9-j] = dizi1[j] ;
+			sirali_dizi[9-j] = dizi1[j] ;
 				
 		}
 		
-		return sýrali_dizi;
+		return sirali_dizi;
 		
 		
 	}
@@ -59,14 +59,14 @@ public class siraLa {
 	}
 	
 	public static void diziGoruntule(int []dizi, String dizi_adi) {
-		String mesaj = dizi_adi+" Içerigi\n\n\n";
+		String mesaj = dizi_adi+" Icerigi\n\n\n";
 		for(int i = 0; i < dizi.length; i++)
 		mesaj += "dizinin "+(i+1)+". elemani: "+dizi[i]+"\n";
 		JOptionPane.showMessageDialog(null, mesaj);
 		}
 	
 	public static void diziGoruntuleort(double d ) {
-		String mesaj = " ortalamasý\n\n\n";
+		String mesaj = " ortalamasi\n\n\n";
 		mesaj += d;
 		JOptionPane.showMessageDialog(null, mesaj);
 		}
